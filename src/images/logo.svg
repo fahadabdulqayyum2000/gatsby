@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="153px" height="128px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+  <filter id="lineGlow">
+    <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+    <feMerge>
+      <feMergeNode in="coloredBlur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+<ellipse cx="76.5" cy="62" rx="70" ry="56" fill="none" stroke="#FFD700" stroke-width="2" stroke-dasharray="50 250" opacity="0.8" filter="url(#lineGlow)">
+  <animateTransform attributeName="transform" type="rotate" from="0 76.5 62" to="360 76.5 62" dur="4s" repeatCount="indefinite"/>
+</ellipse>
+<g><path style="opacity:0.964" fill="#000000" d="M 38.5,10.5 C 48.3081,10.4022 57.6414,12.4022 66.5,16.5C 67.2304,14.6587 67.8971,12.8254 68.5,11C 83.8661,10.1412 99.1995,10.4746 114.5,12C 134.482,17.7814 142.315,30.948 138,51.5C 135.238,61.928 128.738,68.7614 118.5,72C 125.167,80 131.833,88 138.5,96C 129.428,97.238 123.095,102.071 119.5,110.5C 110.809,99.6428 102.309,88.6428 94,77.5C 92.5402,89.733 92.0402,102.066 92.5,114.5C 84.1667,114.5 75.8333,114.5 67.5,114.5C 67.7852,112.712 67.4519,111.045 66.5,109.5C 62.3431,111.497 58.0097,112.997 53.5,114C 39.8374,114.5 26.1707,114.667 12.5,114.5C 12.1669,90.4907 12.5003,66.4907 13.5,42.5C 29.3244,37.6766 37.6577,27.0099 38.5,10.5 Z M 92.5,30.5 C 98.0487,30.0871 103.382,30.9204 108.5,33C 115.041,40.0227 115.041,47.0227 108.5,54C 104.078,56.1036 99.4116,56.9369 94.5,56.5C 92.9219,47.9219 92.2553,39.2552 92.5,30.5 Z M 37.5,32.5 C 57.4718,32.9711 67.4718,43.1377 67.5,63C 67.8522,81.6516 58.6855,91.8182 40,93.5C 38.5962,93.4907 37.4296,92.9907 36.5,92C 36.1798,72.2993 36.5131,52.4659 37.5,32.5 Z"/></g>
+<g id="dot" filter="url(#glow)">
+  <path style="opacity:0.877" fill="#000000" d="M 133.5,106.5 C 141.65,105.16 145.483,108.493 145,116.5C 143.089,121.418 139.589,123.251 134.5,122C 128.198,117.319 127.865,112.152 133.5,106.5 Z">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+</g>
+</svg>
