@@ -2,8 +2,8 @@ import type { GatsbyConfig } from "gatsby"
 
 const config: GatsbyConfig = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
-    title: `My Gatsby Site`,
+    siteUrl: `https://fahad-gatsby.vercel.app`,
+    title: `Fahad Gatsby Site`,
   },
   // More easily incorporate content into your pages through automatic TypeScript type generation and better GraphQL IntelliSense.
   // If you use VSCode you can also use the GraphQL plugin
@@ -13,17 +13,13 @@ const config: GatsbyConfig = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `My Gatsby Site`,
+        name: `Fahad Gatsby Site`,
         short_name: `MySite`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#0ea5e9`,
         display: `standalone`,
-        icon: `src/images/icon.png`, // 512x512+ recommended
-        // optional:
-        icon_options: { 
-          purpose: `any maskable` 
-        },
+        icon: `src/images/icon.png`,
       },
     },
     `gatsby-plugin-offline`,
